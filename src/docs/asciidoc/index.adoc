@@ -1,0 +1,41 @@
+//이렇게 빌드된 asciidoc 파일들을 html 파일로
+//만들어서 내 프로젝트에 같이 빌드될 수 있도록...
+//만들어진 스니펫들을 하나의 html 로 모아주는 역할
+
+= Blog API
+:doctype: book
+:icons: font
+:source-highlighter: heighlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+== 글 단건 조회
+
+=== 요청
+include::{snippets}/post-inqeury/http-request.adoc[]
+
+include::{snippets}/post-inqeury/path-parameters.adoc[]
+
+=== 응답
+
+include::{snippets}/post-inqeury/http-response.adoc[]
+
+include::{snippets}/post-inqeury/response-fields.adoc[]
+
+=== CURL
+include::{snippets}/post-inqeury/curl-request.adoc[]
+
+== 글 작성
+
+=== 요청
+include::{snippets}/post-create/http-request.adoc[]
+
+include::{snippets}/post-create/request-fields.adoc[]
+
+=== 응답
+
+include::{snippets}/post-create/http-response.adoc[]
+
+=== CURL
+include::{snippets}/post-create/curl-request.adoc[]
